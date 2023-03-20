@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+.sr-only {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.social-proof-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 111rem;
+}
+
+.social-heading {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: rgb(80, 32, 80);
+  letter-spacing: -1px;
+  margin-bottom: 2.4rem;
+  padding-right: 16rem;
+}
+
+.social-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgb(147, 123, 146);
+  line-height: 1.5;
+  padding-right: 12rem;
+}
+
+.reviews-box {
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.review {
+  min-width: 44rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(80, 32, 80);
+  background-color: rgb(247, 242, 247);
+  padding: 2rem 3.2rem;
+  border-radius: 8px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.review:nth-child(1) {
+  transform: translateX(-10rem);
+}
+
+.review:nth-child(2) {
+  transform: translateX(-5rem);
+}
+
+.testimonials-box {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+  margin-top: 6.4rem;
+}
+
+.testimonial {
+  /* max-width: 35rem; */
+  background-color: rgb(80, 32, 80);
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 4rem 3.6rem 4rem 3.2rem;
+  border-radius: 8px;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.customer-picture {
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.customer-name {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.customer-verified {
+  color: rgb(238, 104, 164);
+  font-weight: 400;
+}
+
+.testimonial-text {
+  color: rgb(247, 242, 247);
+  line-height: 1.5;
+}
+
+.testimonial:nth-child(2) {
+  transform: translateY(1.6rem);
+}
+
+.testimonial:nth-child(3) {
+  transform: translateY(3.2rem);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
